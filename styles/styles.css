@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* CSS Document Common Elements */
+
+body{
+    position: absolute;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    background: #000;
+    width:100%;
+    height:100%;
+
+    /* below improves consistancey of font rendering across browsers */
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+
+    /* below stops FireFox rendering copy too heavily */
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix to stop Mobile Safari automatically scaling text - http://bit.ly/1mumu5F */
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
+
+
+/* Browser Support: Chrome:5+, Safari:5.1+, Firefox:3.6+, Opera:11.5+, IE:9+, Android:4.4+, iOS:5.1+ */
+@font-face {
+    font-family: 'ExampleFont';
+    src: url('../fonts/ExampleFont-BoldItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#container {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    margin:auto;
+    overflow: hidden;
+    display:none;
+    opacity: 0;
+
+    /* default font-size set here then other sizes set % based of this master value:*/
+    font-size: 7vw;
+}
+
+.abs {
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+
+.rel {
+    position:relative;
+    left: 0;
+    top: 0;
+}
+
+.full {
+    width:100%;
+    height:100%;
+}
+
+.full-w {
+    width:100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hidden {
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+#exit_btn {
+    cursor:pointer;
+    z-index:400;
+    background-color:#FFFFFF;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+#keyline {
+    z-index:399;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border: 1px solid #666666;
+    background-color:transparent;
+}
+
+
+#background {
+    background: #000;
+}
+
+
+/*********** COPY and LAYOUT - default is 300x250 **********/
+
+.copy-area {
+    width: 100%;
+    height: 30vh;
+}
+.copy {
+    font-family:"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; ;
+    font-size:1em;
+    line-height:1em;
+    letter-spacing: 0;
+    color:#fff;
+    margin: 0 7vw;
+    text-align: center;
+}
+.main-copy {
+    
+}
+
+.sub-copy {
+    font-size: .9em;
+    line-height: 1em;
+    padding-top: 1vw;
+}
+
+
+.cta-container {
+    top: auto;
+    bottom: 0;
+    width: auto;
+    height: 10vh;
+}
+
+.cta-copy {
+    font-family: ExampleFont; 
+    font-size: 1em;
+    line-height: 1em;
+    color: #000;
+    background: #666;
+    width: auto;
+    padding: .2em .5em;
+    margin: 0 1em;
+    transition: background-color 1s, color 1s;
+}
+#container:hover .cta-copy, #container:active .cta-copy {
+    background-color: #fff;
+    transition: background-color .3s, color .15s;
+    color: #000;
+}
+
+
+.logo-container {
+    left: auto;
+    top: auto;
+    width: auto;
+    height: 10vh;
+    bottom: 0;
+    right: 0;
+}
+.logo { 
+    width: auto;
+    height: 69%
+}
+
+
+.drop-shadow {text-shadow: 1px 1px 5px rgba(0,0,0, 1);}
+
+/*********** images **********/
+#img_container {
+    top: 30vh;
+    height: calc(100% - 40vh);
+}
+.scale-image {
+    object-fit: cover;
+}
+
+/*********** replay btn **********/
+
+.btn-replay {
+    position:absolute;
+    left:1px;
+    top:1px;
+    width:16px;
+    height:18px;
+    display:none;
+    z-index:401;
+    cursor:pointer;
+    transform-origin: 50% 50%;
+}
+.btn-replay:hover {
+    transform: rotate(-360deg);
+    transition: transform .4s;
+}

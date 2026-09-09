@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hogarth</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="ad.size" content="width=300,height=250">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/responsive.css" type="text/css">
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: #fff
+        }
+
+        #container {
+            display: none;
+            opacity: 0
+        }
+
+        #loading_content {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            position: absolute;
+            border: 1px solid #e5e5e5;
+            box-sizing: border-box
+        }
+
+        #img_loading {
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            width: 10px;
+            height: 13px;
+        }
+
+        #spinner {
+            animation: 1s linear infinite loadingAnim;
+            transform-origin: 50% 50%;
+            font-size: 15px;
+            line-height: 10px;
+            position: absolute;
+            border: 1px solid #aaa;
+            color: #aaa;
+            border-radius: 100%;
+            width: 10px;
+            height: 10px
+        }
+
+        @keyframes loadingAnim {
+            from {
+                transform: rotate(0)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading_content" class="abs full">
+        <div id="img_loading" class="abs"><span id="spinner">-</span></div>
+    </div>
+    <div id="container">
+
+        <div id="keyline" class="abs full"></div>
+        <div id="background" class="abs full"></div>
+        <div id="exit_btn" class="abs full"></div>
+
+        <!-- bg images -->
+        <div id="img_container" class="abs full">
+            <img id="img_frame01" class="abs scale-image full" src="images/noImage.png" alt="">
+            <img id="img_frame02" class="abs scale-image full hidden" src="images/noImage.png" alt="">
+            <img id="img_frame03" class="abs scale-image full hidden" src="images/noImage.png" alt="">
+            <img id="img_frame04" class="abs scale-image full hidden" src="images/noImage.png" alt="">
+            <img id="img_frame05" class="abs scale-image full hidden" src="images/noImage.png" alt="">
+        </div>
+
+        <!-- copy -->
+        <div id="copy_container" class="abs full">
+            <!-- frame 01 -->
+            <div id="copy_area01" class="abs copy-area center">
+                <div id="copy_frame01a" class="frame01-elements copy main-copy hidden"></div>
+                <div id="copy_frame01b" class="frame01-elements copy sub-copy hidden"></div>
+            </div>
+
+            <!-- frame 02 -->
+            <div id="copy_area02" class="abs copy-area center">
+                <div id="copy_frame02a" class="frame02-elements copy main-copy hidden"></div>
+                <div id="copy_frame02b" class="frame02-elements copy sub-copy hidden"></div>
+            </div>
+
+            <!-- frame 03 -->
+            <div id="copy_area03" class="abs copy-area center">
+                <div id="copy_frame03a" class="frame03-elements copy main-copy hidden"></div>
+                <div id="copy_frame03b" class="frame3-elements copy sub-copy hidden"></div>
+            </div>
+
+            <!-- frame 04 -->
+            <div id="copy_area04" class="abs copy-area center">
+                <div id="copy_frame04a" class="frame04-elements copy main-copy hidden"></div>
+                <div id="copy_frame04b" class="frame04-elements copy sub-copy hidden"></div>
+            </div>
+
+            <!-- frame 05 -->
+            <div id="copy_area05" class="abs copy-area center">
+                <div id="copy_frame05a" class="frame05-elements copy main-copy hidden"></div>
+                <div id="copy_frame05b" class="frame05-elements copy sub-copy hidden"></div>
+            </div>
+        </div>
+
+
+        <!-- cta -->
+        <div id="cta_container" class="abs cta-container hidden center">
+            <div id="copy_cta" class="full-w cta-copy cta-copy-off"></div>
+        </div>
+
+        <!-- furniture - logos etc -->
+        <div id="logo_container" class="abs logo-container hidden center">
+            <img id="img_logo" class="logo" src="images/noImage.png" alt="">
+        </div>
+
+        <div id="spare_container" class="abs full hidden">
+            <img id="img_spare" class="abs full" src="images/noImage.png" alt="">
+        </div>
+
+        <img id="btn_replay" class="btn-replay" src="images/noImage.png" alt="">
+    </div>
+
+    <!-- js files -->
+    <script type="text/javascript" src="js/hoxton-v7.js"></script>
+    <script type="text/javascript" src="js/creative.js"></script>
+    <script type="text/javascript" src="js/setDynamicContent.js"></script>
+    <script type="text/javascript" src="js/updateContent.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+{
+    "name": "Hogarth Responsive Boilerplate",
+    "reportingLabel": "{Message}_{Cta}_{width}x{height}",
+    "adType": "HTML5",
+    "adSize": {
+        "width": "300",
+        "height": "600"
+    },
+    "platform": "generic",
+    "backupQuality": "80",
+    
+    "img_frame01": {
+        "type": "image",
+        "value": "images/background_300x250_x2.jpg",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame01a": {
+        "type": "text",
+        "value": "FRAME 01 COPY",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame01b": {
+        "type": "text",
+        "value": "",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "img_frame02": {
+        "type": "image",
+        "value": "images/noImage.png",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame02a": {
+        "type": "text",
+        "value": "FRAME 02 COPY",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame02b": {
+        "type": "text",
+        "value": "",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "img_frame03": {
+        "type": "image",
+        "value": "images/noImage.png",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame03a": {
+        "type": "text",
+        "value": "FRAME 03 COPY",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame03b": {
+        "type": "text",
+        "value": "",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "img_frame04": {
+        "type": "image",
+        "value": "images/noImage.png",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame04a": {
+        "type": "text",
+        "value": "FRAME 04 COPY",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame04b": {
+        "type": "text",
+        "value": "",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "img_frame05": {
+        "type": "image",
+        "value": "images/noImage.png",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame05a": {
+        "type": "text",
+        "value": "END FRAME COPY",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_frame05b": {
+        "type": "text",
+        "value": "",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "copy_cta": {
+        "type": "text",
+        "value": "CTA COPY »",
+        "editableGroups": [
+            "Cta"
+        ]
+    },
+    "exit_url": {
+        "type": "text",
+        "value": "http://www.google.com",
+        "editableGroups": [
+            "Cta"
+        ]
+    },
+    "img_logo": {
+        "type": "image",
+        "value": "images/logo_hogarth.svg",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "img_spare": {
+        "type": "image",
+        "value": "images/noImage.png",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "frameTimes": {
+        "type": "text",
+        "value": "2,2,2,2",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "fadeInSpeed": {
+        "type": "text",
+        "value": "0.5",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "fadeOutSpeed": {
+        "type": "text",
+        "value": "0.3",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "loopingProps": {
+        "type": "text",
+        "value": "0,0,true",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "btn_replay": {
+        "type": "image",
+        "value": "images/replay.svg",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "css": {
+        "type": "css",
+        "value": "",
+        "editableGroups": [
+            "Message"
+        ]
+    },
+    "css_examples": {
+        "type": "css",
+        "value": ".size728x90 #copy_frame02a{ color:red; } .size300x250.currFrame3 .cta-copy{background-color:blue; color:#fff}",
+        "editableGroups": [
+            "Message"
+        ]
+    }
+}
